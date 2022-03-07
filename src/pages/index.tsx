@@ -1,15 +1,14 @@
 import * as React from "react"
 import {Link} from 'gatsby'
+import Layout from "../components/Layout";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // markup
 const IndexPage = () => {
   return( 
-  <div> 
-    <h1>Hello People</h1>
-    <Link to="/about">Work Experience</Link>
-    <Link to="/about">Projects</Link>
-    <Link to="/about">Bio</Link>
-  </div>
+  <Layout> 
+    <h1>Home Page</h1>
+  </Layout>
   )
 }
 
