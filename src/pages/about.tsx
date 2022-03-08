@@ -5,8 +5,9 @@ import Layout from "../components/Layout"
 const about = () => {
   return (
     <div>
-      <Layout></Layout>
+      <Layout>
       <h1>Aboutt</h1>
+      </Layout>
     </div>
   )
 }

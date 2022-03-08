@@ -16,10 +16,57 @@
 }
 
 .links{
-    display: flex;
+    display: none;
     align-items: center;
+}
 
+.hamburger{
+    display: block;
+    position: relative;
+    z-index: 1;
 
+    user-select: none;
 
+    appearance: none;
+    border:none;
+    outline:none;
+    background: none;
+    cursor: pointer;
 
 }
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height:4px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    position: relative;
+
+
+    background-color: black ;
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0.0;
+
+    transition: 0.4s ;
+
+}
+
+@media  (min-width: 768px){
+
+    .hamburger{
+        display: none;
+    }
+    .links{
+        display: flex;
+    }
+}
+
+
+a{
+    color: green;
+}
+
+

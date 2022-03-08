@@ -1,7 +1,8 @@
 import * as React from "react"
 import {Link} from 'gatsby'
-import { Navbar ,Nav, Container, NavDropdown} from 'react-bootstrap'
 import "../styles/navbar.css"
+import zt from "../images/zt.svg";
+
 
 // markup
 const Header = () => {
@@ -10,20 +11,20 @@ const Header = () => {
 
         <nav>
               <div className="navcontainer">
-                <h1> Zain Thaver </h1>
+              <Link to="/about" className="nav-link" > Zain Thaver</Link>
+
                 <div className="links">
+                     <Link to="/" className="nav-link" activeClassName="" > Home</Link>
                      <Link to="/about" className="nav-link" > About</Link>
                      <Link to="/about" className="nav-link"> Projects</Link>
                      <Link to="/about" className="nav-link"> Contact</Link>
                 </div>
+                <button className="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
-              <span></span>
-              <span></span>
-              <h1> zain</h1>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
         </nav>
 
 
