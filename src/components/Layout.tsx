@@ -9,6 +9,7 @@ const Layout = ( { children } : React.PropsWithChildren<{}> ) => {
         <>
             <Header />
             {children}
+            <br/>
             <Footer/>
 
 

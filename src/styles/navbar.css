@@ -1,72 +1,77 @@
 * {
-    margin:0;
-    padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
 
-.navcontainer{
-    max-width: 1280px;
-    margin: 0 ;
+.sitetitle{
+
+    font-family:'Poppins', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
 
 
+.nav-link{
+    font-family:'Poppins', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    margin:10px;
+}
+
+
+
+.navcontainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.links{
-    display: none;
+.active-link
+{
+    border-bottom: 3px solid white;
+}
+
+.links {
+    display: flex;
     align-items: center;
-}
-
-.hamburger{
-    display: block;
-    position: relative;
-    z-index: 1;
-
-    user-select: none;
-
-    appearance: none;
-    border:none;
-    outline:none;
-    background: none;
-    cursor: pointer;
+    justify-content: end;
+    color:white;
+    font: 13px FontSiteSansBoldCondensed, Verdana, Helvetica, Arial, sans-serif;
+    
 
 }
 
-.hamburger span {
-    display: block;
-    width: 33px;
-    height:4px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    position: relative;
+.links a:hover {
+    border-bottom: 3px solid white;
+  }
 
+  .links a.is-active {
+    border-bottom: 3px solid white;
+  }
 
-    background-color: black ;
-    border-radius: 6px;
-    z-index: 1;
+  .active-link{
+    border-bottom: 3px solid white;
+  }
 
-    transform-origin: 0.0;
-
-    transition: 0.4s ;
-
-}
-
-@media  (min-width: 768px){
-
-    .hamburger{
-        display: none;
-    }
-    .links{
-        display: flex;
-    }
+a {
+    color: white;
+    border-bottom: 3px solid transparent;
 }
 
 
-a{
-    color: green;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
