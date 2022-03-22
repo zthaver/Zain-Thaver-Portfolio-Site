@@ -1,0 +1,14 @@
+.workDiv
+{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.returnButton
+{
+    background-color: rgb(203, 223, 255);
+    border: 0px;
+    border-radius: 2px;
+    color: rgb(75, 132, 229);;
+}
