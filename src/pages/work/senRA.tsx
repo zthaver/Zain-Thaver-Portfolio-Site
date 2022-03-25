@@ -4,6 +4,7 @@ import "./workstyles.css"
 import seneca from "../../images/seneca.jpg"
 import { navigate } from "gatsby"
 
+
 // markup
 const senRa = () => {
 
@@ -18,7 +19,7 @@ const senRa = () => {
         <img src={seneca}></img>
         <p> Worked on a team to add features and maintain the codebase of a web testing framework.</p>
         <button className="returnButton" onClick={backToWork}> See other work</button>
-      </div>>
+      </div>
     </Layout>
   )
 }

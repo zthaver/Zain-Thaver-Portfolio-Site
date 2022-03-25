@@ -17,7 +17,7 @@ const senSda = () => {
         <img src={seneca}></img>
         <p> Worked as a team to provide technical support to Seneca student and faculty.</p>
         <button className="returnButton" onClick={backToWork}> See other work</button>
-      </div>>
+      </div>
     </Layout>
   )
 }

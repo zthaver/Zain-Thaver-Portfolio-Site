@@ -1,0 +1,21 @@
+.formContainer{
+    display: block;
+}
+
+
+.formError{
+    border-color: red;
+    color: red;
+    border: none;
+    border-style: solid;
+    border-radius: 3px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left:0px;
+}
+
+.errorText{
+    color: red;
+    font-weight: bold;
+    
+}

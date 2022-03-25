@@ -5,11 +5,11 @@ import {Button} from "@mui/material"
 
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import seneca from "../images/seneca.jpg";
-import bgo from "../images/bgo.png";
+import bgo from "../images/bgo.png"
 import senRa from "./work/senRa"
 import senSda from "./work/senSda"
-import bgoCollections from "./work/bgoCollections"
-import { Link,navigate } from "gatsby"
+import bgoCollections from "./work/bgoCollections";
+import { Link,navigate } from "gatsby";
 
 
 
