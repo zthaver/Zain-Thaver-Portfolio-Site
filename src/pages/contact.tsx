@@ -5,6 +5,8 @@ import "../styles/contact.css"
 import styled from 'styled-components';
 import * as Yup from 'yup';
 import emailjs from "@emailjs/browser";
+import Snackbar from '@mui/material/Snackbar';
+
 
 
 
@@ -68,22 +70,33 @@ message: Yup.string()
 // markup
 const contact = () => {
 
-  const sendEmail = () => {
+  const form = React.useRef();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
   };
 
-  const form = React.useRef();
+  const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   return (
     <Layout>
       <div>
         <h1> Contact</h1>
+        <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        anchorOrigin={{vertical:"top",horizontal:"right"}}
+        message="Message Sent"
+      />
         <Formik initialValues={{
             name:'',
             email:'',
@@ -95,7 +108,11 @@ const contact = () => {
               console.log(sendMessageDetails);
               emailjs.send('service_wfpzsk7', 'template_gkw4bkq', sendMessageDetails, 'user_oGearzYTZGyhVqlL710SX')
               .then((result) => {
-                  console.log(result.text);
+                  console.log(result);
+                  actions.resetForm({values:{name:'',email:'',message:''}});
+                  setOpen(true);
+                  
+                  
               }, (error) => {
                   console.log(error.text);
               });
@@ -126,7 +143,7 @@ const contact = () => {
                 {formik.errors.message && formik.touched.message ? <div className="formError">    </div> : null}
                 {formik.errors.message && formik.touched.message ? <div className="errorText">{formik.errors.message}</div> : null}
                </div>
-            <button type="submit"> Send Messages</button>
+            <button type="submit"> Send Message</button>
 
               
            </FormStyles>

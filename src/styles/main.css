@@ -1,3 +1,5 @@
+
+
 .herophoto{
     display: flex;
     justify-content: center;
@@ -5,8 +7,15 @@
 
 }
 
+img:hover
+{
+    border: 300px white;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
-    font-family:'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 

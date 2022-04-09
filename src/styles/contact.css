@@ -2,7 +2,9 @@
     display: block;
 }
 
-
+body{
+    color: black;
+}
 .formError{
     border-color: red;
     color: red;

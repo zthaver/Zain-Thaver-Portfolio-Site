@@ -12,7 +12,8 @@ h1{
     color: white;
     background-color: rgb(54, 69, 79);
     font-family:'Poppins', sans-serif;
-    display: inline-flex;
+    display: flex;
+    width: 30%;
     margin: 1.25rem;
     justify-content: center;
     
