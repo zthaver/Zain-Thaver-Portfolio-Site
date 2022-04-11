@@ -9,27 +9,29 @@ import bgo from "../images/bgo.png"
 import senRa from "./work/senRa"
 import senSda from "./work/senSda"
 import bgoCollections from "./work/bgoCollections";
-import { Link,navigate } from "gatsby";
+import { graphql, Link,navigate } from "gatsby";
+import Img from "gatsby-image";
 
 
 
 
 
 // markup
-const about = () => {
+const about = ({data}) => {
 
     function detailsButtonOnclick(e:any)
   {
      navigate(`${e.target.id}`);
   }
 
-
+console.log(data)
 
   return (
  
-      <Layout>
+    <Layout>
+      <main>
         <div className="card">
-         <img src={seneca} alt="Avatar"/>
+          <Img fluid={data.seneca.childImageSharp.fluid}/>
         <div className="container">
           <h4><b>Research Assistant</b></h4>
           <p>Seneca College</p>
@@ -37,7 +39,7 @@ const about = () => {
         </div>
       </div>
       <div className="card">
-         <img src={seneca} alt="Avatar"/>
+      <Img fluid={data.seneca.childImageSharp.fluid}/>
         <div className="container">
           <h4><b>Service Desk Analyst</b></h4>
           <p>Seneca College</p>
@@ -45,19 +47,37 @@ const about = () => {
         </div>
       </div>
       <div className="card">
-         <img src={bgo} alt="Avatar"/>
+         <Img fluid={data.bgo.childImageSharp.fluid}/>
         <div className="container">
           <h4><b>Collections Officer</b></h4>
           <p>Bill Gosling Outsourcing</p>
           <button className="detailsButton" id="bgoCollections" onClick={detailsButtonOnclick} > Details</button>
         </div>
       </div>
-      </Layout>
+     </main> 
+    </Layout>
   )
-
-
 }
 
+export const query = graphql`
+query  {
+  seneca: file(relativePath: {eq: "seneca.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid 
+      }
+    }
+  }
+
+  bgo: file(relativePath: {eq: "bgo.png"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid 
+      }
+    }
+  }
+}
+`
 export default about
 
 

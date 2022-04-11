@@ -25,10 +25,10 @@ textarea{
   width:100%;
   font-size: 1.1rem;
   padding; 1.2rem;
-  color: white;
+  color: black;
   outline:none;
   border:none;
-  background-color: rgb(54, 69, 79);
+  background-color: white;
   border-radius 8px;
   margin-top: 1rem;
 }
@@ -37,8 +37,8 @@ textarea{
   resize: vertical;
 }
 button[type="submit"]{
-  background-color: rgb(54, 69, 79);
-  color: var(--black);
+  background-color: white;
+  color: black;
   font-size: 1.1rem;
   display: inline-block;
   outline:none;
@@ -88,7 +88,7 @@ const contact = () => {
 
   return (
     <Layout>
-      <div>
+      <div className="mainContent">
         <h1> Contact</h1>
         <Snackbar
         open={open}
