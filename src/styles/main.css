@@ -6,7 +6,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../images/doodle.png");
+    height: 100%;
 
+}
+
+.mainHeading
+{
+    font-size: 36px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.headshot
+{
+    margin-top: 100px;
+    margin-left: 70px;
 }
 
 img:hover
