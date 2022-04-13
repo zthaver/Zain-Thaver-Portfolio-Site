@@ -3,20 +3,25 @@ import {graphql, Link} from 'gatsby'
 import Layout from "../components/Layout";
 import '../styles/main.css'
 import headshot from "../images/headshot.jpg";
-import Img from "gatsby-image";
+import StaticImage from "gatsby-image";
+
 
 
 // markup
 const IndexPage = ({data}) => {
+
+
+
   return( 
   <Layout> 
     <div className="herophoto">
       <div>
-        <h1 className="mainHeading"> Hey I'm Zain👋</h1>
-        <p>Welcome to my portfolio!</p>
+      <StaticImage fluid={data.headshot.childImageSharp.fluid} className="headshot"/>
+
       </div>
-      <div>
-        <img src={headshot} className="headshot"></img>
+      <div  className="siteText">
+      <h1 className="mainHeading"> Hey I'm Zain👋</h1>
+        <p>Welcome to my portfolio!</p>
       </div>
    
     </div>
@@ -27,15 +32,14 @@ const IndexPage = ({data}) => {
 
 export const query = graphql`
 query  {
-  doodle: file(relativePath: {eq: "doodle.png"}) {
+      headshot: file(relativePath: {eq: "headshot.jpg"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid 
       }
     }
   }
-
-}
-`
+  }
+  `
 
 export default IndexPage

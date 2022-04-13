@@ -28,7 +28,7 @@ console.log(data)
     <Layout>
       <main>
         <div className="card">
-          <Img fluid={data.seneca.childImageSharp.fluid}/>
+          <Img fluid={data.seneca.childImageSharp.fluid} className="img"/>
         <div className="container">
           <h4><b>Research Assistant</b></h4>
           <p>Seneca College</p>
@@ -36,7 +36,7 @@ console.log(data)
         </div>
       </div>
       <div className="card">
-      <Img fluid={data.seneca.childImageSharp.fluid}/>
+      <Img fluid={data.seneca.childImageSharp.fluid} className="img"/>
         <div className="container">
           <h4><b>Service Desk Analyst</b></h4>
           <p>Seneca College</p>
@@ -44,7 +44,7 @@ console.log(data)
         </div>
       </div>
       <div className="card">
-         <Img fluid={data.bgo.childImageSharp.fluid}/>
+         <Img fluid={data.bgo.childImageSharp.fluid}   className="img" />
         <div className="container">
           <h4><b>Collections Officer</b></h4>
           <p>Bill Gosling Outsourcing</p>
