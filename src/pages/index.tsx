@@ -17,7 +17,6 @@ const IndexPage = ({data}) => {
     <div className="herophoto">
       <div>
       <StaticImage fluid={data.headshot.childImageSharp.fluid} className="headshot"/>
-
       </div>
       <div  className="siteText">
       <h1 className="mainHeading"> Hey I'm Zain👋</h1>

@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.hamburgerMenu
+{
+    display: none;
+}
 
 
 .sitetitle{
@@ -67,7 +71,24 @@ a {
 
 
 
+@media screen and (max-width: 800px) {
+    .links
+    {
+        display: none;
+    }
 
+     .sidebar{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburgerMenu
+    {
+        display: flex;
+    } 
+    
+}
 
 
 
