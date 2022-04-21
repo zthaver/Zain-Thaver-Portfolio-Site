@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import '../styles/main.css'
 import headshot from "../images/headshot.jpg";
 import StaticImage from "gatsby-image";
+import { Button } from "@mui/material";
 
 
 
@@ -21,6 +22,7 @@ const IndexPage = ({data}) => {
       <div  className="siteText">
       <h1 className="mainHeading"> Hey I'm Zain👋</h1>
         <p>Welcome to my portfolio!</p>
+        <Button className="downloadButton"><a className="downloadResume" href={`../../../ZainThaver.pdf`} download>Download Resume</a></Button>
       </div>
    
     </div>

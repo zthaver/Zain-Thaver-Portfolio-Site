@@ -18,9 +18,10 @@ body{
     font-size: 20px;
     font-weight: bolder;
     padding: 20px 25px;
+    text-decoration: none;
 }
 
-.downloadResume:hover
+.downloadButton:hover
 {
     cursor: pointer;
      background-color: red;
@@ -29,6 +30,14 @@ body{
 .mainHeading
 {
     font-size: 36px;
+}
+
+
+.downloadButton
+{
+    background-color: black;
+    color: white;
+    text-decoration: none;
 }
 
 p{
