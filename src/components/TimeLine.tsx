@@ -1,4 +1,4 @@
-import timeLineData from "../constant/timeLineData";
+import timeLineData from "../pages/constant/timeLineData";
 import TimelineItem from "./TimeLineItem";
 import "../styles/timeLine.css";
 import React from "react";
