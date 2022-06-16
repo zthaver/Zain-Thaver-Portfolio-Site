@@ -3,7 +3,7 @@ import {graphql, Link} from 'gatsby'
 import Layout from "../components/Layout";
 import '../styles/main.css'
 import headshot from "../images/headshot.jpg";
-import StaticImage from "gatsby-image";
+import Image from "gatsby-image";
 import { Button } from "@mui/material";
 
 
@@ -15,17 +15,21 @@ const IndexPage = ({data}) => {
 
   return( 
   <Layout> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <div className="herophoto">
-      <div>
-      <StaticImage fluid={data.headshot.childImageSharp.fluid} className="headshot"/>
+      
+      <div className="photo">
+      <Image fluid={data.headshot.childImageSharp.fluid} className="headshot"/>
       </div>
       <div  className="siteText">
-      <h1 className="mainHeading"> Hey I'm Zain👋</h1>
-        <p>Welcome to my portfolio!</p>
-        <Button className="downloadButton"><a className="downloadResume" href={`../../../ZainThaver.pdf`} download>Download Resume</a></Button>
+            <h1 className="mainHeading"> Hey I'm Zain👋</h1>
+            <h2>Welcome to my portfolio!</h2>
+            <Button className="downloadButton"><a className="downloadResume" href={`../../../ZainThaver.pdf`} download>DOWNLOAD RESUME</a></Button>
       </div>
-   
+
     </div>
+
+    
 
   </Layout>
   )

@@ -8,6 +8,7 @@ import senSda from "./work/senSda"
 import bgoCollections from "./work/bgoCollections";
 import { graphql, Link,navigate } from "gatsby";
 import Img from "gatsby-image";
+import TimeLine from "../components/TimeLine"
 
 
 
@@ -26,32 +27,9 @@ console.log(data)
   return (
  
     <Layout>
-      <main>
-        <div className="card">
-          <Img fluid={data.seneca.childImageSharp.fluid} className="img"/>
-        <div className="container">
-          <h4><b>Research Assistant</b></h4>
-          <p>Seneca College</p>
-          <button className="detailsButton" id="senRA" onClick={detailsButtonOnclick}> Details</button>
-        </div>
-      </div>
-      <div className="card">
-      <Img fluid={data.seneca.childImageSharp.fluid} className="img"/>
-        <div className="container">
-          <h4><b>Service Desk Analyst</b></h4>
-          <p>Seneca College</p>
-          <button className="detailsButton" id="senSda" onClick={detailsButtonOnclick}> Details</button>
-        </div>
-      </div>
-      <div className="card">
-         <Img fluid={data.bgo.childImageSharp.fluid}   className="img" />
-        <div className="container">
-          <h4><b>Collections Officer</b></h4>
-          <p>Bill Gosling Outsourcing</p>
-          <button className="detailsButton" id="bgoCollections" onClick={detailsButtonOnclick} > Details</button>
-        </div>
-      </div>
-     </main> 
+      <div className="timelineParent">
+        <TimeLine></TimeLine>
+     </div> 
     </Layout>
   )
 }

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+h1,h2{
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+.timelineParent
+{
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    font-family: 'Lato, sans-serif';
+    margin:0;
+}
+
+.timeline-container
+{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+
+.timeline-container::after{
+    display: flex;
+    background-color: red;
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width:4px;
+    height: 100%;
+}
+
+
+
+.timeline-item{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin: 10px 0;
+    width: 50%;
+    color:black
+}
+
+.timeline-item:nth-child(odd){
+    align-self: flex-end;
+    justify-content: flex-start;
+    width:50%;
+    margin:10px 0;
+    padding-right: 0px;
+    padding-left: 30px;
+}
+
+.timeline-item-content
+{
+    background-color: white;
+    max-width: 70%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    width:400px;
+    text-align: right;
+}
+
+.timeline-item-content a
+{
+    color:black;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content
+{
+    align-items: flex-start;
+    text-align:left;
+}
+
+.timeline-item-content .tag
+{
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .timeline-item-content {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .timeline-item-content,
+    .timeline-item:nth-child(odd) .timeline-item-content {
+        padding: 15px 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .timeline-item-content .tag {
+        width: calc(100% - 10px);
+        text-align: center;
+    }
+
+    .timeline-item-content time {
+        margin-top: 20px;
+    }
+
+    .timeline-item-content a {
+        text-decoration: underline;
+    }
+
+    .timeline-item-content a::after {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}

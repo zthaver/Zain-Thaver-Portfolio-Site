@@ -37,7 +37,7 @@
 .active-link
 {
     color: gray;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid green;
 }
 
 .links {
@@ -51,16 +51,14 @@
 
 .links a:hover {
     color: grey;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid green;
   }
 
   .links a.is-active {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid green;
   }
 
-  .active-link{
-    border-bottom: 3px solid white;
-  }
+
 
 a {
     color: white;

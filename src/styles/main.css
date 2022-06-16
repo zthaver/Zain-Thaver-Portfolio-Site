@@ -6,30 +6,37 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/doodle.png");
     height: 100%;
+    border: 1px solid transparent;
+
+}
+.headshot:hover{
+    border: 5px solid green;
 
 }
 
 .downloadResume
 {
-    border-radius: 27px;
     border: 5px black;
-    font-size: 20px;
+    font-size: 0.625em;
     font-weight: bolder;
-    padding: 20px 25px;
     text-decoration: none;
+    border: 1px solid transparent;
 }
 
 .downloadButton:hover
 {
     cursor: pointer;
-     background-color: red;
+    border: 2px solid green;
 }
 
 .mainHeading
 {
-    font-size: 36px;
+    font-size: 2.250em;
+}
+.photo{
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -46,8 +53,8 @@ p{
 
 .headshot
 {
-    margin-top: 100px;
-    margin-left: 70px;
+    margin-top: 6.25em;
+    margin-left: 4.375em;
 }
 
 img:hover
@@ -59,6 +66,9 @@ img:hover
 .siteText
 {
     margin-left: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -69,8 +79,36 @@ img:hover
 
 
 .headshot{
-    height: 400px;
-    width: 400px;
+    height: 30em;
+    width: 30em;
     border-radius: 50%;
 }
 
+
+@media screen and (max-width: 700px) {
+    .downloadButton
+    {
+        display: none;
+    }
+    .herophoto
+    {
+        display: block;
+    }
+    .photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headshot
+    {
+        height: 12.5em;
+        width: 12.5em;
+        border-radius: 50%;
+    }
+    .aboutInfo
+    {
+        font-size: 1.125em;
+    }
+
+
+}
