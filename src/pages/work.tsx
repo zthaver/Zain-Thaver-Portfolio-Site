@@ -1,13 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import '../styles/work.css'
-import {Button} from "@mui/material"
-
-import { ThemeProvider, createTheme } from '@mui/material/styles'
-import senSda from "./work/senSda"
-import bgoCollections from "./work/bgoCollections";
 import { graphql, Link,navigate } from "gatsby";
-import Img from "gatsby-image";
 import TimeLine from "../components/TimeLine"
 
 

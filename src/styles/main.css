@@ -90,6 +90,9 @@ img:hover
     {
         display: none;
     }
+    .downloadResume{
+        display: none;
+    }
     .herophoto
     {
         display: block;
