@@ -29,6 +29,8 @@ h1,h2{
     width:100%;
     flex-direction: column;
     margin: 40px 0;
+    position: relative;
+    box-sizing: border-box;
 }
 
 
@@ -109,11 +111,30 @@ h1,h2{
     right:5px;
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 1023px) {
+    .timeline-item-content {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .timeline-container
+    {
+        height: 100%;
+    }
 .timeline-item-content .timeline-date
 {
     display: none;
 }
+
+.timeline-item-content,
+.timeline-item:nth-child(odd) .timeline-item-content
+{
+    padding: 15px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 .timeline-item-content .tag
 {
     display: flex;
