@@ -17,7 +17,6 @@ const IndexPage = ({data}) => {
   <Layout> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <div className="herophoto">
-      
       <div className="photo">
       <Image fluid={data.headshot.childImageSharp.fluid} className="headshot"/>
       </div>
