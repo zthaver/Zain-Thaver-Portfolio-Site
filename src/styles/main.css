@@ -21,10 +21,16 @@ body{
     border: 1px solid transparent;
 }
 
+.downloadButton
+{
+    position: absolute;
+    padding: 10px;
+}
+
 .downloadButton:hover
 {
     cursor: pointer;
-    border: 2px solid green;
+    border: 1px solid green;
 }
 
 .mainHeading
@@ -52,11 +58,13 @@ p{
 {
     margin-top: 6.25em;
     margin-left: 4.375em;
+    position: absolute;
+    padding: 20px;
 }
 
-img:hover
+.headshot:hover
 {
-    border: 300px white;
+    border: 1px solid green;
     cursor: pointer;
 }
 
