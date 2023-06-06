@@ -8,6 +8,14 @@ const TimeLine = () =>
 {
     const timeLineData = [
         {
+            text: 'Started Tech Tutor At Vaughan Public Libraries',
+            date: 'September  2015',
+            category: {
+                tag: 'Work',
+                color: '#FFDB14'
+            },
+        },
+        {
             text: 'Started Computer Programming at Seneca College',
             date: 'September 7 2018',
             category: {
@@ -52,6 +60,14 @@ const TimeLine = () =>
             category: {
                 tag: 'school',
                 color: '#FF0000'
+            },
+        },
+        {
+            text: 'Started working as A Software Engineer At Guidewire Software',
+            date: 'July 2022',
+            category: {
+                tag: 'Work',
+                color: '#FFDB14'
             },
         }
     ]

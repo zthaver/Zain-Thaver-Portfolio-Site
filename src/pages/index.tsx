@@ -23,7 +23,7 @@ const IndexPage = ({data}) => {
       <div  className="siteText">
             <h1 className="mainHeading"> Hey I'm Zain👋</h1>
             <h2>Welcome to my portfolio!</h2>
-            <Button className="downloadButton"><a className="downloadResume" href={`../../../ZainThaver.pdf`} download>DOWNLOAD RESUME</a></Button>
+            <Button className="downloadButton"><a className="downloadResume" href={`../../../Zain_Thaver_Resume.pdf`} download>DOWNLOAD RESUME</a></Button>
       </div>
 
     </div>

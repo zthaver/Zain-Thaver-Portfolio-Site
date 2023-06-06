@@ -1,6 +1,5 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import '../styles/work.css'
 import { graphql, Link,navigate } from "gatsby";
 import TimeLine from "../components/TimeLine"
 

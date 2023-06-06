@@ -25,10 +25,9 @@ textarea{
   width:100%;
   font-size: 1.1rem;
   padding; 1.2rem;
-  color: black;
+  color: white;
   outline:none;
   border:none;
-  background-color: white;
   border-radius 8px;
   margin-top: 1rem;
 }
@@ -37,7 +36,6 @@ textarea{
   resize: vertical;
 }
 button[type="submit"]{
-  background-color: white;
   color: black;
   font-size: 1.1rem;
   display: inline-block;
