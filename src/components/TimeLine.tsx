@@ -8,7 +8,7 @@ const TimeLine = () =>
 {
     const timeLineData = [
         {
-            text: 'Started Tech Tutor At Vaughan Public Libraries',
+            text: 'Started Tech Tutoring your mom At Vaughan Public Libraries',
             date: 'September  2015',
             category: {
                 tag: 'Work',
