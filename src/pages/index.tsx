@@ -1,15 +1,25 @@
 import * as React from "react"
 import {graphql, Link} from 'gatsby'
 import Layout from "../components/Layout";
+// @ts-ignore: allow side-effect css import without module declarations
 import '../styles/main.css'
-import headshot from "../images/headshot.jpg";
 import Image from "gatsby-image";
 import { Button } from "@mui/material";
 
 
 
+interface IndexPageProps {
+  data: {
+    headshot: {
+      childImageSharp: {
+        fluid: any;
+      };
+    };
+  };
+}
+
 // markup
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }: IndexPageProps) => {
 
 
 
@@ -23,7 +33,7 @@ const IndexPage = ({data}) => {
       <div  className="siteText">
             <h1 className="mainHeading"> Hey I'm Zain👋</h1>
             <h2>Welcome to my portfolio!</h2>
-            <Button className="downloadButton"><a className="downloadResume" href={`../../../Zain_Thaver_Resume.pdf`} download>DOWNLOAD RESUME</a></Button>
+            <Button className="downloadButton"><a className="downloadResume" href={`../../../Zain Resume Developer.docx`} download>DOWNLOAD RESUME</a></Button>
       </div>
 
     </div>

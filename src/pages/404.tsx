@@ -5,7 +5,7 @@ import * as React from "react"
 
 // markup
 const Error = () => {
-  return <div> Error dfsf Page </div>
+  return <div> Error  Page </div>
 }
 
 export default Error

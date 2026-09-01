@@ -1,13 +1,13 @@
 
 const path = require(`path`)
 
-/** @type {import('gatsby).GatsbyConfig} */
+/** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
   siteMetadata: {
       title: ``,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-netlify-cms",    
+  plugins: ["gatsby-plugin-decap-cms",    
   {
     resolve: `gatsby-source-filesystem`,
     options: {

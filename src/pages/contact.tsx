@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import { Formik, Form } from "formik"
+// @ts-ignore: allow side-effect css import without module declarations
 import "../styles/contact.css"
 import styled from 'styled-components';
 import * as Yup from 'yup';
@@ -24,11 +25,11 @@ input,
 textarea{
   width:100%;
   font-size: 1.1rem;
-  padding; 1.2rem;
+  padding: 1.2rem;
   color: white;
   outline:none;
   border:none;
-  border-radius 8px;
+  border-radius:8px;
   margin-top: 1rem;
 }
 textarea{
@@ -104,7 +105,7 @@ const contact = () => {
             await actions.validateForm(values).then((success)=>{
               var sendMessageDetails = {email:values.email,name: values.name ,message: values.message};
               console.log(sendMessageDetails);
-              emailjs.send('service_wfpzsk7', 'template_gkw4bkq', sendMessageDetails, 'user_oGearzYTZGyhVqlL710SX')
+              emailjs.send("service_vzbihbi","template_6wy9f3g",sendMessageDetails,"lzm-WmGLjx6oAZEFg")
               .then((result) => {
                   console.log(result);
                   actions.resetForm({values:{name:'',email:'',message:''}});
@@ -115,7 +116,7 @@ const contact = () => {
                   console.log(error.text);
               });
             }).catch((error)=>{
-              
+              console.log(error)
             })
           }}
           validationSchema={SendMessageSchema}
