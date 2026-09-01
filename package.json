@@ -8,8 +8,8 @@
     "gatsby"
   ],
   "engines": {
-  "node": "24.x"
-},
+    "node": "24.x"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
